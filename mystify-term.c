@@ -219,7 +219,7 @@ static void parse_opts(int argc, char **argv) {
             case 'f': opt_fps = imax(atoi(optarg), 1); break;
             case 'e': opt_max_velocity = fminf(fmaxf((float)atof(optarg), MIN_VEL), MAX_VEL); break;
             case 's': opt_show_status = 0; break;
-            case 'i': opt_trail_incr = imin(imax(atoi(optarg), 1), MAX_TRAILS);
+            case 'i': opt_trail_incr = imin(imax(atoi(optarg), 1), MAX_TRAILS); break;
             case '?': usage(stderr, 1); break;
         }
     }
